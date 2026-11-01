@@ -1,0 +1,20 @@
+[[plugin]]
+id = "fil-at-werma/internet-time"
+name = "Internet Time"
+version = "0.9.0"
+plugin_api = 3
+author = "fil-at-werma"
+description = "Display current internet time."
+icon = "skull"
+tags = ["clock","swatch","beats","internettime"]
+
+[[plugin]]
+id          = "fil-at-werma/noc-todo"
+name        = "Todo.txt Tasks"
+version     = "0.9.1"
+plugin_api  = 42
+author      = "fil-at-werma"
+icon        = "checklist"
+description = "Display your todo.txt-cli tasks."
+tags        = ["todo.txt","tasks","gtd","productivity"]
+dependencies= ["todo.txt-cli"]

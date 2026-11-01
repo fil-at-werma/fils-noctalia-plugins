@@ -1,0 +1,12 @@
+id = "fil-at-werma/internet-time"
+name = "Internet Time"
+version = "0.9.0"
+plugin_api = 3
+author = "fil-at-werma"
+description = "Display current internet time."
+icon = "skull"
+tags = ["clock","swatch","beats","internettime"]
+
+[[widget]]
+id = "beats"
+entry = "widget.luau"

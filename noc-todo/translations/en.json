@@ -1,0 +1,8 @@
+{
+  "settings": {
+    "todo_path": {
+      "label": "Todo Path",
+      "description": "Path to your todo.txt file"
+    }
+  }
+}
