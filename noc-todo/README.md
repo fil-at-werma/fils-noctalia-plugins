@@ -17,6 +17,12 @@ displays the current list of tasks on demand.
 | Entries         | Bar widget:`tasks`; panel:`list` |
 | Launcher Prefix | -                                |
 
+## Prerequisites
+
+The panel widget relies on the existence and the output of an installation
+of the `todo.txt-cli` tool on the `$PATH`. **Make sure it is installed and
+working before you proceed to install this plugin!**
+
 ## Installation
 
 > [!IMPORTANT]

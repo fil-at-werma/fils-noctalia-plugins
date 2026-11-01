@@ -26,6 +26,11 @@ the current "Internet Time" in a bar widget.
 1. Add it to your bar in `~/.config/noctalia/config.toml`  
    or via **Settings ⟶ Bar ⟶ Add widget**
 
+## Notes
+
+This plugin does not use any calls to services. The value displayed is computed
+locally from your system time.
+
 ## Version 0.9.0
 
 Initial Version - Just shows the current Internet Time (a.k.a Swatch .Beats) in
