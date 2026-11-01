@@ -1,15 +1,17 @@
 # Internet Time Bar Widget For Noctalia Shell
 
-**This is a "learning experience" type of project.** The of this plugin is to
-provide an add-on to [Noctalia Shell](https://noctalia.dev) that displays the
-current "Internet Time" in a bar widget.
+**This is a "learning experience" type of project.** The pupose of this plugin
+is to provide an add-on to [Noctalia Shell](https://noctalia.dev) that displays
+the current "Internet Time" in a bar widget.
 
-> :warning: **Use at own risk** - There is and will not be any support outside
+> [!NOTE]
+> **Use at own risk** - There is and will not be any support outside
 > the instructions in this Readme file.
 
 ## Installation
 
-> :warning: **This plugin is neither in official nor community add-on sources.**
+> [!IMPORTANT]
+> **This plugin is neither in official nor community add-on sources.**
 
 ### Add the Plugin Source
 

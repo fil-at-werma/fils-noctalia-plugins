@@ -5,7 +5,8 @@ an add-on to **Noctalia Shell** that displays the current number of open tasks
 from your local **todo.txt-cli** in a bar widget and provide a panel that
 displays the current list of tasks on demand.
 
-> :warning: **Use at own risk** - There is and will not be any support outside
+> [!NOTE]
+> **Use at own risk** - There is and will not be any support outside
 > the instructions in this Readme file.
 
 ## Plugin
@@ -18,7 +19,8 @@ displays the current list of tasks on demand.
 
 ## Installation
 
-> :warning: **This plugin is neither in official nor community add-on sources.**
+> [!IMPORTANT]
+> **This plugin is neither in official nor community add-on sources.**
 
 ### Add the Plugin Source
 
