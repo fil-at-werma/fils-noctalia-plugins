@@ -1,8 +1,8 @@
 # Internet Time Bar Widget For Noctalia Shell
 
-This is a "learning experience" type of project. The gist of it is to provide
-an add-on to Noctalia Shell that displays the current "Internet Time" in a bar
-widget.
+**This is a "learning experience" type of project.** The of this plugin is to
+provide an add-on to [Noctalia Shell](https://noctalia.dev) that displays the
+current "Internet Time" in a bar widget.
 
 > :warning: **Use at own risk** - There is and will not be any support outside
 > the instructions in this Readme file.
@@ -11,30 +11,12 @@ widget.
 
 > :warning: **This plugin is neither in official nor community add-on sources.**
 
-### Download
+### Add the Plugin Source
 
-Choose one of these methods:
+1. Go to **Settings ⟶ Plugins ⟶ Sources**, click `Add Source`. Keep `Git` for Type.
+1. Pick a reasonable Package ID
+1. For `Location` enter: `https://github.com/fil-at-werma/fils-noctalia-plugins`
 
-#### Copy or link into plugin path
- 
-1. Checkout or download the git repository. For example to `$HOME/GitHub/fil-at-werma/internet-time/`
-1. Either **move** or **copy** the contents of that path to `$HOME/.local/share/noctalia/plugins/internet-time/`  
-   OR link to it:
-```bash
-cd $HOME/.local/share/noctalia/plugins
-ln -s ~/GitHub/fil-at-werma/internet-time
-cd -
-```
-
-#### Setup a local plugin source
-
-1. Make a local dir, for example `$HOME/dev/mynoctaliapluginsource/`
-1. Add that path in **Settings ⟶ Plugins ⟶ Sources ⟶ Add Source** as a Path source
-1. Checkout the git repo there (`$HOME/dev/mynoctaliapluginsource/internet-time`)  
-   or link it to there (see above).
-
-> :bulb: _May_ need a noctalia restart.
- 
 ### Enable and add Plugin
 
 1. Enable the plugin: `noctalia msg plugins enable fil-at-werma/internet-time`  

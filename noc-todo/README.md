@@ -20,29 +20,11 @@ displays the current list of tasks on demand.
 
 > :warning: **This plugin is neither in official nor community add-on sources.**
 
-### Download
+### Add the Plugin Source
 
-Choose one of these methods:
-
-#### Copy or link into plugin path
- 
-1. Checkout or download the git repository. For example to `$HOME/GitHub/fil-at-werma/noc-todo/`
-1. Either **move** or **copy** the contents of that path to `$HOME/.local/share/noctalia/plugins/noc-todo/`  
-   OR link to it:
-```bash
-cd $HOME/.local/share/noctalia/plugins
-ln -s ~/GitHub/fil-at-werma/noc-todo
-cd -
-```
-
-#### Setup a local plugin source
-
-1. Make a local dir, for example `$HOME/dev/mynoctaliapluginsource/`
-1. Add that path in **Settings ⟶ Plugins ⟶ Sources ⟶ Add Source** as a Path source
-1. Checkout the git repo there (`$HOME/dev/mynoctaliapluginsource/noc-todo`)  
-   or link it to there (see above).
-
-> :bulb: _May_ need a noctalia restart.
+1. Go to **Settings ⟶ Plugins ⟶ Sources**, click `Add Source`. Keep `Git` for Type.
+1. Pick a reasonable Package ID
+1. For `Location` enter: `https://github.com/fil-at-werma/fils-noctalia-plugins`
  
 ### Enable and add Plugin
 
