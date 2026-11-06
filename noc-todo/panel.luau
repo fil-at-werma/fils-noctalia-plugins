@@ -5,6 +5,8 @@ local function parseTasks(content)
     for line in content:gmatch("[^\n]+") do
         if line:match("^%s*$") then
             -- skip empty
+        elseif line:match("^----$") then
+            break
         elseif line:match("^x%") then
             table.insert(completed, line:sub(3):match("^%s*(.*)$"))
         else

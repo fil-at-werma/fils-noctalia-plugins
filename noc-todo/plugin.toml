@@ -1,6 +1,6 @@
 id          = "fil-at-werma/noc-todo"
 name        = "Todo.txt Tasks"
-version     = "0.9.1"
+version     = "0.9.2"
 plugin_api  = 42
 author      = "fil-at-werma"
 icon        = "checklist"
