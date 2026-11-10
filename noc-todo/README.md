@@ -57,21 +57,12 @@ working before you proceed to install this plugin!**
 - Bar - Widget shows number of tasks. Click opens the panel.
 - Panel - Full scrollable list of pending + completed tasks.
 
-## Known issues
-- ~~Expects (hard-coded) the TODO_PATH at `$HOME/OneDrive/todo`~~ v0.9.1
-
 ## Planned Features (Not implented, yet)
-- Mark tasks as done.
-- Use upcoming rust client for todo.txt 
-- Use other Task-List sources?
-- ~~Setting to adjust TODO_PATH (where `todo.txt`, `done.txt` reside)~~ v0.9.1
 
-## Version 0.9.1 / 2026-11-01
-
-### Added 
-
-- Setting for TODO_PATH
-
-## Version 0.9.0
-
-- Initial Version.
+```mermaid
+timeline
+title Roadmap
+    0.9.2 : Mark tasks as 'done'
+    0.10.0 : optionally use upcoming rust client for todo.txt interaction
+    ??? : Use other task list sources.
+```
