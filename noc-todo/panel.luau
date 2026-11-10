@@ -4,17 +4,20 @@ local function parseTasks(content)
     local pending, completed = {}, {}
     for line in content:gmatch("[^\n]+") do
         if line:match("^%s*$") then
-            -- skip empty
         elseif line:match("^----$") then
             break
-        elseif line:match("^x%") then
+        elseif line:match("^x") then
             table.insert(completed, line:sub(3):match("^%s*(.*)$"))
         else
-            table.insert(pending, line)
+            local num = line:match("^%s*(%d+)")
+            local text = line:match("^%s*%d+%s*(.*)$") or line
+            table.insert(pending, { number = num, text = text })
         end
     end
     return pending, completed
 end
+
+local completeTask
 
 local function render(content)
     local pending, completed = parseTasks(content)
@@ -29,8 +32,17 @@ local function render(content)
         table.insert(children, ui.label({ text = "  All clear ✓" }))
     else
         for _, task in ipairs(pending) do
-            local display = task:match("^%a%*%s*(.*)$") or task
-            table.insert(children, ui.label({ text = "  • " .. display }))
+            local display = task.text:match("^%a%*%s*(.*)$") or task.text
+            table.insert(children, ui.row({ gap = 8 }, {
+                ui.label({ text = "  • " .. display, flexGrow = 1 }),
+                ui.button({
+                    text = "✓",
+                    variant = "ghost",
+                    onClick = function()
+                        completeTask(task.number)
+                    end,
+                }),
+            }))
         end
     end
 
@@ -43,17 +55,10 @@ local function render(content)
         end
     end
 
-    panel.render(ui.column({}, {
-        ui.scroll({ flexGrow = 1 }, children),
-    }))
+    panel.render(ui.column({}, children))
 end
 
-function onOpen()
-    -- Show loading state immediately
-    panel.render(ui.column({}, {
-        ui.label({ text = "Loading…" }),
-    }))
-
+local function refresh()
     noctalia.runAsync("todo.sh -p", function(result)
         if result.exitCode ~= 0 then
             panel.render(ui.column({}, {
@@ -64,4 +69,22 @@ function onOpen()
         end
         render(result.stdout)
     end)
+end
+
+completeTask = function(taskNumber)
+    noctalia.runAsync("todo.sh do " .. taskNumber, function(result)
+        if result.exitCode == 0 then
+            refresh()
+        else
+            noctalia.notify("Todo", "Failed: " .. (result.stderr or "unknown error"))
+        end
+    end)
+end
+
+function onOpen()
+    -- Show loading state immediately
+    panel.render(ui.column({}, {
+        ui.label({ text = "Loading…" }),
+    }))
+    refresh()
 end   

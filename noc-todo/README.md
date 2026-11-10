@@ -62,7 +62,6 @@ working before you proceed to install this plugin!**
 ```mermaid
 timeline
 title Roadmap
-    0.9.2 : Mark tasks as 'done'
     0.10.0 : optionally use upcoming rust client for todo.txt interaction
     ??? : Use other task list sources.
 ```
