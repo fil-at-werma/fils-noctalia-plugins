@@ -1,6 +1,6 @@
 # Noctalia Add-On for todo.txt (UNOFFICIAL)
 
-This is a "learning experience" type of project. The gist of it is to provide
+This is a "learning experience" type of project. The purpose of it is to provide
 an add-on to **Noctalia Shell** that displays the current number of open tasks
 from your local **todo.txt-cli** in a bar widget and provide a panel that
 displays the current list of tasks on demand.
@@ -37,7 +37,7 @@ working before you proceed to install this plugin!**
 ### Enable and add Plugin
 
 1. Enable the plugin: `noctalia msg plugins enable fil-at-werma/noc-todo`  
-   or via **Settings ⟶ Plugins ⟶ Internet Time**
+   or via **Settings ⟶ Plugins ⟶ Todo.txt Tasks**
 1. Add it to your bar in `~/.config/noctalia/config.toml`  
    or via **Settings ⟶ Bar ⟶ Add widget**
 
@@ -61,6 +61,9 @@ working before you proceed to install this plugin!**
 - ~~Expects (hard-coded) the TODO_PATH at `$HOME/OneDrive/todo`~~ v0.9.1
 
 ## Planned Features (Not implented, yet)
+- Mark tasks as done.
+- Use upcoming rust client for todo.txt 
+- Use other Task-List sources?
 - ~~Setting to adjust TODO_PATH (where `todo.txt`, `done.txt` reside)~~ v0.9.1
 
 ## Version 0.9.1 / 2026-11-01
