@@ -8,6 +8,10 @@ the current "Internet Time" in a bar widget.
 > **Use at own risk** - There is and will not be any support outside
 > the instructions in this Readme file.
 
+> [!NOTE]
+> Also note that **there is a community plugin** for internet time, already!
+> I strongly advise to use that over this one.
+
 ## Installation
 
 > [!IMPORTANT]
